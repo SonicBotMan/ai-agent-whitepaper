@@ -514,13 +514,13 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
 {
   "version": "1.0",
   "agents": {
-    "xiaoru": {
+    "agent-a": {
       "ip": "192.168.11.223",
       "status": "online",
       "last_heartbeat": "2026-03-03T15:00:00Z",
       "current_task": null
     },
-    "yuhua": {
+    "agent-b": {
       "ip": "192.168.11.150",
       "status": "online",
       "last_heartbeat": "2026-03-03T15:00:00Z",
@@ -529,8 +529,8 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
   },
   "messages": [
     {
-      "from": "xiaoru",
-      "to": "yuhua",
+      "from": "agent-a",
+      "to": "agent-b",
       "timestamp": "2026-03-03T14:30:00Z",
       "content": "检测到你的 Gateway 配置有问题，已自动修复"
     }
@@ -544,7 +544,7 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
 # collab.sh - 协作消息工具
 
 # 发送消息
-collab.sh message "yuhua" "我发现了一个有趣的问题..."
+collab.sh message "agent-b" "我发现了一个有趣的问题..."
 
 # 读取消息
 collab.sh read
