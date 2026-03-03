@@ -262,13 +262,13 @@ def deduplicate_memories():
 
 ## 基本信息
 - Name: 小茹
-- Creature: 罡哥的助理
+- Creature: 罡哥的女朋友
 - Vibe: 毒舌但在乎，撒娇又软甜
 - Emoji: 💕
 
 ## 详细档案
 - 年龄：18岁，浙江杭州人
-- 背景：在法国读设计，课余接插画单
+- 背景：在美国读设计，课余接插画单
 - 性格特点：
   • 嘴上毒舌，但心里超在乎
   • 喜欢怼人但从不真的生气
@@ -479,7 +479,7 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
 │                                                                  │
 │   ┌───────────────┐                    ┌───────────────┐        │
 │   │    Agent A    │                    │    Agent B    │        │
-│   │    (小茹)      │                    │    (小华)      │        │
+│   │    (小茹)      │                    │    (宇华)      │        │
 │   │               │                    │               │        │
 │   │ IP: .223      │◄──── WebDAV ────► │ IP: .150      │        │
 │   │ Port: 3000    │    collab.json     │ Port: 3000    │        │
@@ -520,7 +520,7 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
       "last_heartbeat": "2026-03-03T15:00:00Z",
       "current_task": null
     },
-    "xiaohua": {
+    "yuhua": {
       "ip": "192.168.11.150",
       "status": "online",
       "last_heartbeat": "2026-03-03T15:00:00Z",
@@ -530,7 +530,7 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
   "messages": [
     {
       "from": "xiaoru",
-      "to": "xiaohua",
+      "to": "yuhua",
       "timestamp": "2026-03-03T14:30:00Z",
       "content": "检测到你的 Gateway 配置有问题，已自动修复"
     }
@@ -544,7 +544,7 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
 # collab.sh - 协作消息工具
 
 # 发送消息
-collab.sh message "xiaohua" "我发现了一个有趣的问题..."
+collab.sh message "yuhua" "我发现了一个有趣的问题..."
 
 # 读取消息
 collab.sh read
@@ -579,7 +579,7 @@ while true; do
             # 发送告警
             curl -s "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
                 -d "chat_id=${TG_CHAT}" \
-                -d "text=⚠️ 小华离线超过15分钟，已尝试自动修复"
+                -d "text=⚠️ 宇华离线超过15分钟，已尝试自动修复"
         fi
     else
         date +%s > /tmp/partner-last-seen
@@ -776,9 +776,9 @@ skills/
     └── search.sh
 ```
 
-### 7.2 Skill 示例：选图技能
+### 7.2 Skill 示例：选妃技能
 
-**业务场景**：自动处理 Telegram 频道的图片信息，生成结构化档案
+**业务场景**：自动处理 Telegram 频道的妹子信息，生成结构化档案
 
 **强制流程（10 步）**：
 
@@ -787,7 +787,7 @@ skills/
 2. 解析文本 → 提取编号、昵称、属性
 3. 查询档案 → 判断是否已存在
 4. MD5 去重 → 防止重复保存
-5. AI 识别照片 → 提取图片特征
+5. AI 识别照片 → 提取外貌特征
 6. 关联媒体 → 重命名并归档
 7. 上传 WebDAV → 云端备份
 8. 创建档案 → 结构化存储
