@@ -919,7 +919,7 @@ check_tasks
 
 ```
 skills/
-├── girl-selector/
+├── image-archiver/
 │   ├── SKILL.md              # Skill 定义与触发规则
 │   ├── scripts/
 │   │   ├── enforce.sh        # 强制执行入口
@@ -939,9 +939,9 @@ skills/
     └── search.sh
 ```
 
-### 7.2 Skill 示例：选妃技能
+### 7.2 Skill 示例：图片归档技能
 
-**业务场景**：自动处理 Telegram 频道的妹子信息，生成结构化档案
+**业务场景**：自动处理 Telegram 频道的用户资料，生成结构化档案
 
 **强制流程（10 步）**：
 
