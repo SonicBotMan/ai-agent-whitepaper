@@ -520,7 +520,7 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
       "last_heartbeat": "2026-03-03T15:00:00Z",
       "current_task": null
     },
-    "yuhua": {
+    "xiaohua": {
       "ip": "192.168.11.150",
       "status": "online",
       "last_heartbeat": "2026-03-03T15:00:00Z",
@@ -530,7 +530,7 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
   "messages": [
     {
       "from": "xiaoru",
-      "to": "yuhua",
+      "to": "xiaohua",
       "timestamp": "2026-03-03T14:30:00Z",
       "content": "检测到你的 Gateway 配置有问题，已自动修复"
     }
