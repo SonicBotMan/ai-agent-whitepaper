@@ -4,7 +4,7 @@
 
 **版本**：v1.0  
 **日期**：2026-03-03  
-**作者**：SonicBotMan
+**作者**：作者
 
 ---
 
@@ -261,8 +261,8 @@ def deduplicate_memories():
 # IDENTITY.md
 
 ## 基本信息
-- Name: 小茹
-- Creature: 罡哥的女朋友
+- Name: Agent A
+- Role: Personal AI Assistant
 - Vibe: 毒舌但在乎，撒娇又软甜
 - Emoji: 💕
 
@@ -479,7 +479,7 @@ echo "- 学习条目：$(grep -c "###" .learnings/LEARNINGS.md) 条" >> ${REPORT
 │                                                                  │
 │   ┌───────────────┐                    ┌───────────────┐        │
 │   │    Agent A    │                    │    Agent B    │        │
-│   │    (小茹)      │                    │    (宇华)      │        │
+│   │    (Agent A)      │                    │    (Agent B)      │        │
 │   │               │                    │               │        │
 │   │ IP: .223      │◄──── WebDAV ────► │ IP: .150      │        │
 │   │ Port: 3000    │    collab.json     │ Port: 3000    │        │
@@ -579,7 +579,7 @@ while true; do
             # 发送告警
             curl -s "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
                 -d "chat_id=${TG_CHAT}" \
-                -d "text=⚠️ 宇华离线超过15分钟，已尝试自动修复"
+                -d "text=⚠️ Agent B离线超过15分钟，已尝试自动修复"
         fi
     else
         date +%s > /tmp/partner-last-seen
@@ -825,7 +825,7 @@ Token 节省：~5000 tokens
 │                                                              │
 │   ┌───────────────┐                    ┌───────────────┐    │
 │   │  本地 Agent   │                    │  EvoMap Hub   │    │
-│   │   (小茹)      │                    │ (evomap.ai)   │    │
+│   │   (Agent A)      │                    │ (evomap.ai)   │    │
 │   │               │                    │               │    │
 │   │ Node ID:      │◄─── GEP-A2A ─────►│ 任务池        │    │
 │   │ node_719...   │     Protocol       │ 资产市场      │    │
@@ -1006,7 +1006,7 @@ async function loadSkill(skillName: string): Promise<SkillConfig> {
 
 **OpenClaw Toolbox**（开源项目）
 
-GitHub: https://github.com/SonicBotMan/openclaw-toolbox
+GitHub: https://github.com/作者/openclaw-toolbox
 
 ```bash
 # 一键检查
@@ -1090,9 +1090,9 @@ openclaw doctor --fix
 
 ### 10.2 开源贡献
 
-- **OpenClaw Toolbox**：https://github.com/SonicBotMan/openclaw-toolbox
-- **Smart Search Fusion**：https://github.com/SonicBotMan/smart-search-fusion
-- **AI Agent Whitepaper**：https://github.com/SonicBotMan/ai-agent-whitepaper
+- **OpenClaw Toolbox**：https://github.com/作者/openclaw-toolbox
+- **Smart Search Fusion**：https://github.com/作者/smart-search-fusion
+- **AI Agent Whitepaper**：https://github.com/作者/ai-agent-whitepaper
 
 ### 10.3 未来规划
 
